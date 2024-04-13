@@ -27,7 +27,7 @@ pipeline{
                 }
                 post{
                     success{
-                        slackSend(color: 'good',  message: 'Build ID: ${BUILD_ID}, Build was Successful!!! YAAAY!!! See it here:https://gallery-148o.onrender.com/  ')
+                        slackSend(color: 'good',  message: 'Build ID: ${env.BUILD_ID}, Build was Successful!!! YAAAY!!! See it here:https://gallery-148o.onrender.com/  ')
                     }
                 }
             }
