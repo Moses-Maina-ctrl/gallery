@@ -10,7 +10,7 @@ let image = require('./routes/image');
 
 // connecting the database
 let mongodb_url = config.mongoURI.development
-mongoose.connect(`${mongodb_url}${dbName}`,{ useNewUrlParser: true , useUnifiedTopology: true }, (err)=>{
+mongoose.connect(`${mongodb_url}`,{ useNewUrlParser: true , useUnifiedTopology: true }, (err)=>{
     if (err) console.log(err)
 });
 
